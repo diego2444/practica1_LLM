@@ -43,7 +43,7 @@ ul { /*selector d'etiqueta: llista no ordenada (ul)*/
 }
 
 h2::first-letter { /*selector de pseudo-element, selecciona sa primera lletra de tots els h2*/
-    color:#555794;
+    color:#8789c8;
 }
 
 /*------estils del header------*/
@@ -55,7 +55,7 @@ header { /*selector d'etiqueta: header*/
 
 nav li { /*selector de descendents, selecciona els elements de la llista (li) que estiguin dins "nav"*/
     display: inline; /*per que actuin com elements en linea en lloc d'elements en bloc*/
-    background-image: linear-gradient(#393B6D, #8789c8);
+    background-image: linear-gradient(#393b6d55, #393B6D);
     padding: 0.5rem;
 }
 
