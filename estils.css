@@ -1,0 +1,167 @@
+/*------estils genèrics------*/
+/*colors utilitzats:
+-#8789c8
+-#393B6D
+-#555794
+-#393b6d55
+*/
+
+* { /*selector universal*/
+    font-family:'Courier New', Courier, monospace;
+    margin: 1rem;
+}
+
+body { /*selector d'etiqueta body*/
+    background-image: url(medios/stars3.gif);
+    background-attachment: fixed;
+    color: white;
+    margin: 5px 10px;
+}
+/*he creat una classe anomenada "tot" per poder ficar tot a un div i donarli estils diferents de body*/
+.tot { /*selector de classe*/
+    background-color: rgba(0, 0, 0, 0.868);
+    border: 1px solid #393B6D;
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+}
+
+a { /*selector d'etiqueta: hiperenllaç*/
+    text-decoration: none; /*per llevar el format dels enllaços*/
+    color: white;
+}
+
+ul { /*selector d'etiqueta: llista no ordenada (ul)*/
+    list-style: none; /*per llevar els punts de la llista*/
+    padding: 0; /*per llevar l'espai que es crea quan es una llista*/
+}
+
+.bordes { /*selector de classe (voreres)*/
+    border: 2px dashed #393B6D;
+    padding: 5px;
+    background-color: #393b6d55;
+}
+
+h2::first-letter { /*selector de pseudo-element, selecciona sa primera lletra de tots els h2*/
+    color:#555794;
+}
+
+/*------estils del header------*/
+header { /*selector d'etiqueta: header*/
+    text-align: center;
+    margin: 1rem;
+    background-image: url(medios/that-background-ambient.mp3);
+}
+
+nav li { /*selector de descendents, selecciona els elements de la llista (li) que estiguin dins "nav"*/
+    display: inline; /*per que actuin com elements en linea en lloc d'elements en bloc*/
+    background-image: linear-gradient(#393B6D, #8789c8);
+    padding: 0.5rem;
+}
+
+nav li:hover { /*pseudo-classe hover, s'aplica quan el cursor esta sobre l'element*/
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(#555794, #393B6D);
+}
+
+#moix { /*selector d'id (imatge del moix)*/
+    height: 5rem; 
+    width: 5rem;
+    border-radius: 10%;
+}
+
+/*------estils del section------*/
+section {
+    background-color: #393b6d55;
+    padding: 5px;
+    width: 73%;
+    height: 26.4rem;
+    float: right;
+    margin-left: 0;
+}
+
+h2 {
+    text-align: center;
+}
+h2:first-of-type { /*pseudo-classe first-of-type, per nomes aplicar estils al primer h2*/
+    border-bottom: 2px #393B6D solid;
+}
+
+#subtitol { /*selector d'id*/
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
+/*------estils del aside------*/
+aside {
+    width: 20%;
+    height: 27rem;
+    float: left;
+    text-align: center;
+    background-color: #393b6d55;
+}
+
+aside a {
+    display: block;
+}
+aside a:hover {
+    color: #8789c8;
+    font-size: 18px;
+}
+
+/*------estils del footer------*/
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+    clear: both;
+}
+
+footer p {
+    display: inline;
+}
+
+
+/*---------estils de les altres pagines que no son inici----------*/
+.seccio_completa {
+    /*he fet una classe per la seccio de les altres pagines
+    perque per la pagina d'inici no tinc possat el width al 100% perque volia posar un aside,
+    pero les altres pagines no tenen aside*/
+    width: 100%;
+    height: auto;
+    margin: 2rem -0.5rem 1rem 0;
+}
+a h1:hover { /*selecciona nomes els h1 que estan a enllaços en fer hover*/
+    color: #393B6D;
+}
+
+/*estils video*/
+video {
+    height: 15rem;
+    width: 25rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+/*estils audio*/
+audio {
+    height: auto;
+    width: 15rem;
+    margin: 0 auto;
+    border:1px solid #8789c8;
+    display: block;
+}
+.seccio_completa li {
+    width: 40%;
+    margin: 2rem auto;
+    padding: 0;
+    text-align: center;
+}
+
+/*estils taula*/
+table {
+    margin: 2rem auto;
+}
